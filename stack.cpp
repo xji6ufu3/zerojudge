@@ -33,7 +33,7 @@ void push(int data){
 
 void pop(){
 	if(top == 0) cout<<"This stack is empty\n";
-	else cout<<stack[--top]<<'\n';
+	else cout<<stack[--top]<<'\n'; // 先top--,並輸出stack[top](最後一筆資料)，若下次push，將會覆蓋當前stack[top]的資料 
 }
 
 int stack_top(){
